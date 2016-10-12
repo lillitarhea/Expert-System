@@ -1,16 +1,15 @@
-
 (defrule main-house
 (initial-fact)
 =>
 (printout t "====================================================== "crlf)
-(printout t "   House Identification Expert System                 "crlf)
+(printout t "   Dream Home Suggestion Expert System                 "crlf)
 (printout t "   Programming by: Lillita Rhea D'souza"crlf)
 (printout t "     A simple expert system which attempts to identify "crlf)
 (printout t "     a house based on its characteristics.           "crlf)
 (printout t "====================================================== "crlf)
 
 
-(printout t"Is your house in a building ?(yes/no) ")
+(printout t" Do you want to live in a building?(yes/no) ")
 (assert(why))
 (assert(building(read))))
 
