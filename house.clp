@@ -1,3 +1,4 @@
+
 (defrule main-house
 (initial-fact)
 =>
@@ -17,7 +18,7 @@
 (defrule non-building
 (building no)
 =>
-(printout t"Does it have more than two storeys ?(yes/no) ")
+(printout t"Do you want more than two storeys?(yes/no) ")
 (assert(two-storeys(read))))
 
 ;;;======================================================
