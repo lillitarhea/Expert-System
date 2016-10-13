@@ -26,7 +26,7 @@
 (defrule two-storeys-yes
 (two-storeys yes)
 =>
-(printout t"Your house is a cottage" crlf)
+(printout t" Your dream home is a cottage" crlf)
 (bind $?house cottage)
 (assert(house-is $?house)))
 ;;;======================================================
@@ -34,7 +34,7 @@
 (defrule two-storeys-no
 (two-storeys no)
 =>
-(printout t"Does it have a garden ?(yes/no) ")
+(printout t"Do you want a garden ?(yes/no) ")
 (assert(garden(read))))
 
 ;;;======================================================
@@ -44,14 +44,14 @@
 (defrule garden-yes
 (garden yes)
 =>
-(printout t"Your house is a Bungalow" crlf)
+(printout t"Your dream home is a Bungalow" crlf)
 (bind $?house bungalow)
 (assert(house-is $?house)))
 ;;;======================================================
 (defrule garden-no
 (garden no)
 =>
-(printout t"Your house is a raw house" crlf)
+(printout t"Your dream home is a raw house" crlf)
 (bind $?house rawhouse)
 (assert(house-is $?house)))
 ;;;======================================================
@@ -62,7 +62,7 @@
 (defrule building
 (building yes)
 =>
-(printout t"Does it have a porch ?(yes/no) ")
+(printout t"Do you want a porch ?(yes/no) ")
 (assert(porch(read))))
 
 ;;;======================================================
@@ -70,7 +70,7 @@
 (defrule porch-yes
 (porch yes)
 =>
-(printout t"Your house is a penthouse" crlf)
+(printout t"Your dream house is a penthouse" crlf)
 (bind $?house penthouse)
 (assert(house-is $?house)))
 ;;;======================================================
@@ -78,7 +78,7 @@
 (defrule porch-no
 (porch no)
 =>
-(printout t"Does it have a single main room ?(yes/no) ")
+(printout t"Do you want a single main room ?(yes/no) ")
 (assert(room(read))))
 
 ;;;======================================================
@@ -88,14 +88,14 @@
 (defrule room-yes
 (room yes)
 =>
-(printout t"Your house is a studio apartment" crlf)
+(printout t"Your dream home is a studio apartment" crlf)
 (bind $?house studioapartment)
 (assert(house-is $?house)))
 ;;;======================================================
 (defrule room-no
 (room no)
 =>
-(printout t"Your house is a Resident apartment" crlf)
+(printout t"Your dream home is a Resident apartment" crlf)
 (bind $?house residentapartment)
 (assert(house-is $?house)))
 
